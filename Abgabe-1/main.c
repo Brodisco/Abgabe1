@@ -37,6 +37,7 @@ int main() {
 	printf("Aktuelle Uhrzeit:%2.0d:%2.0d:%2.0d Uhr",Stunden,Minuten,Sekunden );
 	*/
 
+	/*
 	float Sekunden = 24060;
 	int Minuten = Sekunden / 60.0;
 	int Stunden = Minuten /60.0;
@@ -46,7 +47,8 @@ int main() {
 	int IStunden = Stunden;
 
 
-	printf("Uhrzeit = %2.f:%2.d:%2.d ",IStunden,IMinuten,ISekunden);
+	printf("Uhrzeit = %2.d:%2.d:%2.d ",IStunden,IMinuten,ISekunden);
+	*/
 
 	return 0;
 }
