@@ -10,7 +10,7 @@
 
 int main() {
 
-	/*
+	/* Aufgabe 1
 	printf("   (%c`-''-/%c).___..--''%c`-._  	\n",34,34,34);
 	printf("    `6_ 6 ) `-. (     ).`-.__.`)     	\n");
 	printf("    (_Y_.)' ._ ) `._ `. ``-..-'  	\n");
@@ -18,7 +18,9 @@ int main() {
 	printf(" (il),-'' (li),' ((!.-' 			\n");
 	*/
 
-	/*int Zahl = 1117;
+	/* Aufgabe 2
+
+	int Zahl = 1117;
 
 	int TBereich = Zahl / 1000 ;
 	int HBereich = Zahl / 100 - TBereich * 10;
@@ -29,7 +31,7 @@ int main() {
 	printf("%d",Quersumme);
 	*/
 
-	/*
+	/* Aufgabe 3 a
 	int Stunden = 12;
 	int Minuten = 20;
 	int Sekunden = 43;
@@ -37,7 +39,7 @@ int main() {
 	printf("Aktuelle Uhrzeit:%2.0d:%2.0d:%2.0d Uhr",Stunden,Minuten,Sekunden );
 	*/
 
-	/*
+	/* Aufgabe 3 b
 	float Sekunden = 24060;
 	int Minuten = Sekunden / 60.0;
 	int Stunden = Minuten /60.0;
@@ -49,6 +51,7 @@ int main() {
 
 	printf("Uhrzeit = %2.d:%2.d:%2.d ",IStunden,IMinuten,ISekunden);
 	*/
+
 
 	return 0;
 }
