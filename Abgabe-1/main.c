@@ -6,3 +6,5 @@
  */
 
 include <studi.h>
+
+printf<"blaskdadnas">
