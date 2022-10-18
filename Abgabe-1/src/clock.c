@@ -30,3 +30,45 @@ void printTimeFromCount(int count)
 
 	printf("Prof. von Bodisco steht um %d:%02d:%02d auf. \n", hours, minuts, seconds);
 }
+
+void sanduhr(unsigned int b, char c)
+{
+	for(int y = 0; y < b; y++)
+	{
+		for(int x = 0; x < b; x++)
+		{
+			if ( ((y + x) == (b - 1)) || ((y == x) ) )
+			{
+				printf("%c", c);
+			}else{
+				if ( (b % 2) == 0)
+				{
+					if ( ((y + x) < b) && !((y - x) >= 0) )
+					{
+						printf("%c", c);
+					}else{
+						if ((y == (b - 1)) || (y == 0) )
+						{
+							printf("%c", c);
+						}else{
+							printf(" ");
+						}
+					}
+				}else{
+					if ( !((y + x) < b) && ((y - x) >= 0) )
+					{
+						printf("%c", c);
+					}else{
+						if ((y == (b - 1)) || (y == 0) )
+						{
+							printf("%c", c);
+						}else{
+							printf(" ");
+						}
+					}
+				}
+			}
+		}
+		printf("\n");
+	}
+}

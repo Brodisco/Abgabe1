@@ -15,6 +15,7 @@ void printTimeFromCount(int count);
 void printAllPossibleNumbers(int n);
 void checkPalindrom(int n);
 void rechteck(unsigned int breite, unsigned int hoehe, char c);
+void sanduhr(unsigned int b, char c);
 
 int main(void)
 {
@@ -31,6 +32,12 @@ int main(void)
 	checkPalindrom(112232211);
 	
 	rechteck(4,6,'x');
+
+	printf("\n");
+
+	sanduhr(19, 'x');
+
+
 
 	return EXIT_SUCCESS;
 }
