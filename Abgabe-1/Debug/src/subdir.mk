@@ -7,6 +7,7 @@ C_SRCS += \
 ../src/clock.c \
 ../src/main.c \
 ../src/palindrom.c \
+../src/picture.c \
 ../src/rectangle.c \
 ../src/squareSum.c \
 ../src/verifyCode.c 
@@ -15,6 +16,7 @@ OBJS += \
 ./src/clock.o \
 ./src/main.o \
 ./src/palindrom.o \
+./src/picture.o \
 ./src/rectangle.o \
 ./src/squareSum.o \
 ./src/verifyCode.o 
@@ -23,6 +25,7 @@ C_DEPS += \
 ./src/clock.d \
 ./src/main.d \
 ./src/palindrom.d \
+./src/picture.d \
 ./src/rectangle.d \
 ./src/squareSum.d \
 ./src/verifyCode.d 

@@ -36,14 +36,14 @@ int squareSum(int n)
 
 int squareSum(int n)
 {
-	int qs = 0;
+	int squareSum = 0;
 
 	while(n > 0)
 	{
-		qs += n % 10;
+		squareSum += n % 10;
 		n /= 10;
 	}
 
-	return qs;
+	return squareSum;
 }
 

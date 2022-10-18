@@ -16,9 +16,13 @@ void printAllPossibleNumbers(int n);
 void checkPalindrom(int n);
 void rechteck(unsigned int breite, unsigned int hoehe, char c);
 void sanduhr(unsigned int b, char c);
+void drawPicture();
 
 int main(void)
 {
+	drawPicture();
+	printf("\n");
+
 	printf("Abgabe 1: 28.10.22 \n");
 	
 	printf("QS: %d \n", squareSum(123456789));
