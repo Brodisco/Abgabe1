@@ -15,7 +15,8 @@ void printTiger(void);
 int quersumme(int);
 void printTime(int, int, int);
 void printTimeFormatted(int, int, int);
-char* convertSecondsToTime(int);
+void convertSecondsToTime(int);
+void convertSecondsToTimeWithoutAdditionalVariables(int);
 void printAllPINs();
 
 int main(void) {
@@ -52,6 +53,7 @@ int main(void) {
 	int x = 24060;
 
 	convertSecondsToTime(x);
+	convertSecondsToTimeWithoutAdditionalVariables(x);
 
 	//input - hours * 3600 - minutes * 60;
 
