@@ -18,18 +18,9 @@ void printTimeFormatted(int, int, int);
 void convertSecondsToTime(int);
 void convertSecondsToTimeWithoutAdditionalVariables(int);
 void printAllPINs();
+void checkForPalindrom(int);
 
 int main(void) {
-	/*
-	 *
-	 * Folgendes ASCII Bild auf der Konsole ausgeben
-	("`-''-/").___..--''"`-._
- 	 `6_ 6  )   `-.  (     ).`-.__.`)
- 	 (_Y_.)'  ._   )  `._ `. ``-..-'
-   	   _..`--'_..-_/  /--'_.'
-  	  ((((.-''  ((((.'  (((.-'
-	 */
-	/*
 	printf("Aufgabe 1:\n");
 	printTiger();
 
@@ -45,24 +36,26 @@ int main(void) {
 	int minuten = 02;
 	int sekunden = 43;
 
-	//printTime(stunden, minuten, sekunden);
-	//printTimeFormatted(stunden, minuten, sekunden);
+	printTime(stunden, minuten, sekunden);
+	printTimeFormatted(stunden, minuten, sekunden);
 
 	printf("\nAufgabe 4:\n");
-*/
-	int x = 24060;
 
+	int x = 24060;
 	convertSecondsToTime(x);
 	convertSecondsToTimeWithoutAdditionalVariables(x);
 
-	//input - hours * 3600 - minutes * 60;
-
-	printf("Prof. von Bodisco steht um %02i:%02i:%02i Uhr auf. \n", x/3600, x/60-x/3600*60, x - (x / 3600)* 3600 -  ((x / 60) - x / 3600) * 60);
-
 	printf("\nAufgabe 5:\n");
 
-	//printAllPINs();
+	printAllPINs();
+	
+	printf("\nAufgabe 6:\n");
+	
+	int palindrom = 54145;
+	
+	void checkForPalindrom(input);
 
+	
 
 
 	return EXIT_SUCCESS;
