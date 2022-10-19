@@ -19,7 +19,7 @@ void rechteck(unsigned int breite, unsigned int hoehe, char c) {
    }
    
    // Untere Seite
-   for (int i = 0; i < breite; i++) {
+   for (int m = 0; m < breite; m++) {
        printf("%c", c);
    }
    printf("\n");
