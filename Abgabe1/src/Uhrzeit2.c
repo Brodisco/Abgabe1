@@ -12,3 +12,7 @@ void convertSecondsToTime(int input) {
 
 	printf("Prof. von Bodisco steht um %02i:%02i:%02i Uhr auf. \n", hours, minutes, seconds);
 }
+
+void convertSecondsToTimeWithoutAdditionalVariables(int input) {
+	printf("Prof. von Bodisco steht um %02i:%02i:%02i Uhr auf. \n", input/3600, input/60-input/3600*60, input - (input/3600)*3600 - (input/60-input/3600*60)*60);
+}
