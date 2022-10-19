@@ -19,6 +19,7 @@ void convertSecondsToTime(int);
 void convertSecondsToTimeWithoutAdditionalVariables(int);
 void printAllPINs();
 void checkForPalindrom(int);
+void rechteck(unsigned int, unsigned int, char);
 
 int main(void) {
 	printf("Aufgabe 1:\n");
@@ -54,8 +55,10 @@ int main(void) {
 	int palindrom = 54145;
 	
 	void checkForPalindrom(input);
-
 	
+	printf("\nAufgabe 7:\n");
+	
+	rechteck(4, 6, 'x');
 
 
 	return EXIT_SUCCESS;
