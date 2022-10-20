@@ -13,6 +13,7 @@ void checkPalindrom(int n)
 {
 	int posNum[20];
 	int counter = 0;
+	int palFlag = 1;
 
 	while(n > 0)
 	{
@@ -30,12 +31,17 @@ void checkPalindrom(int n)
 		if (!(posNum[l] == posNum[r]))
 		{
 			printf("kein Palindrom \n");
-			goto finish;
+			palFlag = 0;
+
 		}
 	}while(((r--) - (l++)) >= 2);
 
-	printf("Palindrom \n");
+	if (palFlag)
+	{
+		printf("Palindrom \n");
+	}
 
-	finish:
+
+
 }
 

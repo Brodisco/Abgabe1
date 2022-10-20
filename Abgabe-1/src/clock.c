@@ -5,6 +5,8 @@
  *      Author: student
  */
 
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -37,19 +39,23 @@ void sanduhr(unsigned int b, char c)
 	{
 		for(int x = 0; x < b; x++)
 		{
+			//print the x of the Sandclock
 			if ( ((y + x) == (b - 1)) || ((y == x) ) )
 			{
 				printf("%c", c);
 			}else{
+				//Decide if the Clock is filled from the top or the bottom
 				if ( (b % 2) == 0)
 				{
+					//Fill the top part of the clock
 					if ( ((y + x) < b) && !((y - x) >= 0) )
 					{
-						printf("%c", c);
+						printf("%c", 'o');
 					}else{
+						//Build the ground or the top
 						if ((y == (b - 1)) || (y == 0) )
 						{
-							printf("%c", c);
+							printf("%c", 'm');
 						}else{
 							printf(" ");
 						}

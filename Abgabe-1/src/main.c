@@ -39,7 +39,7 @@ int main(void)
 
 	printf("\n");
 
-	sanduhr(19, 'x');
+	sanduhr(10, 'x');
 
 
 

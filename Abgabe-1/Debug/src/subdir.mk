@@ -12,15 +12,6 @@ C_SRCS += \
 ../src/squareSum.c \
 ../src/verifyCode.c 
 
-OBJS += \
-./src/clock.o \
-./src/main.o \
-./src/palindrom.o \
-./src/picture.o \
-./src/rectangle.o \
-./src/squareSum.o \
-./src/verifyCode.o 
-
 C_DEPS += \
 ./src/clock.d \
 ./src/main.d \
@@ -29,6 +20,15 @@ C_DEPS += \
 ./src/rectangle.d \
 ./src/squareSum.d \
 ./src/verifyCode.d 
+
+OBJS += \
+./src/clock.o \
+./src/main.o \
+./src/palindrom.o \
+./src/picture.o \
+./src/rectangle.o \
+./src/squareSum.o \
+./src/verifyCode.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -39,4 +39,11 @@ src/%.o: ../src/%.c src/subdir.mk
 	@echo 'Finished building: $<'
 	@echo ' '
 
+
+clean: clean-src
+
+clean-src:
+	-$(RM) ./src/clock.d ./src/clock.o ./src/main.d ./src/main.o ./src/palindrom.d ./src/palindrom.o ./src/picture.d ./src/picture.o ./src/rectangle.d ./src/rectangle.o ./src/squareSum.d ./src/squareSum.o ./src/verifyCode.d ./src/verifyCode.o
+
+.PHONY: clean-src
 
