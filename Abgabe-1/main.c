@@ -18,7 +18,7 @@ int main() {
 	printf(" (il),-'' (li),' ((!.-' 			\n");
 	*/
 
-	/* Aufgabe 2
+	/*Aufgabe 2
 
 	int Zahl = 1117;
 
@@ -37,9 +37,10 @@ int main() {
 	int Sekunden = 43;
 
 	printf("Aktuelle Uhrzeit:%2.0d:%2.0d:%2.0d Uhr",Stunden,Minuten,Sekunden );
+	//b ist mit %2.0d für gleichen abstand
 	*/
 
-	/* Aufgabe 3 b
+	/* Aufgabe 4 a
 	float Sekunden = 24060;
 	int Minuten = Sekunden / 60.0;
 	int Stunden = Minuten /60.0;
@@ -51,6 +52,10 @@ int main() {
 
 	printf("Uhrzeit = %2.d:%2.d:%2.d ",IStunden,IMinuten,ISekunden);
 	*/
+
+	//Aufgabe 4
+	int zeit = 24061;
+	printf("%d:%d:%d",zeit/60/60,zeit/60 - (zeit/60/60*60),((float)zeit/60/60*60*60)- (int)zeit);
 
 
 	return 0;
