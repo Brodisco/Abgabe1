@@ -20,8 +20,10 @@ void convertSecondsToTimeWithoutAdditionalVariables(int);
 void printAllPINs();
 void checkForPalindrom(int);
 void rechteck(unsigned int, unsigned int, char);
+void sanduhr(unsigned int, char );
 
 int main(void) {
+	/*
 	printf("Aufgabe 1:\n");
 	printTiger();
 
@@ -59,7 +61,10 @@ int main(void) {
 	printf("\nAufgabe 7:\n");
 	
 	rechteck(4, 6, 'x');
+	*/
+	printf("\nAufgabe 8:\n");
 
+	sanduhr(9, 'x');
 
 	return EXIT_SUCCESS;
 }
