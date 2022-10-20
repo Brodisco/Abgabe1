@@ -23,7 +23,7 @@ void rechteck(unsigned int, unsigned int, char);
 void sanduhr(unsigned int, char );
 
 int main(void) {
-	/*
+
 	printf("Aufgabe 1:\n");
 	printTiger();
 
@@ -56,12 +56,12 @@ int main(void) {
 	
 	int palindrom = 54145;
 	
-	void checkForPalindrom(input);
+	void checkForPalindrom(palindrom);
 	
 	printf("\nAufgabe 7:\n");
 	
 	rechteck(4, 6, 'x');
-	*/
+
 	printf("\nAufgabe 8:\n");
 
 	sanduhr(9, 'x');
