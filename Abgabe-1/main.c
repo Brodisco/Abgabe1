@@ -40,23 +40,24 @@ int main() {
 	//b ist mit %2.0d für gleichen abstand
 	*/
 
-	/* Aufgabe 4 a
-	float Sekunden = 24060;
+	 //Aufgabe 4 a
+	int Sekunden = 24060;
 	int Minuten = Sekunden / 60.0;
 	int Stunden = Minuten /60.0;
 
-	int ISekunden = (int)Sekunden - Minuten * 60;
+	int ISekunden = Sekunden - Minuten * 60;
 	int IMinuten = Minuten - Stunden * 60;
 	int IStunden = Stunden;
 
 
 	printf("Uhrzeit = %2.d:%2.d:%2.d ",IStunden,IMinuten,ISekunden);
+
+
+	//Aufgabe 4 b
+	/*
+	int zeit = 24060;
+	printf("%2.d:%2.d:%2.d",zeit/60/60,zeit/60 - zeit/60/60*60,zeit - zeit/60*60);
 	*/
-
-	//Aufgabe 4
-	int zeit = 24061;
-	printf("%d:%d:%d",zeit/60/60,zeit/60 - (zeit/60/60*60),((float)zeit/60/60*60*60)- (int)zeit);
-
 
 	return 0;
 }
