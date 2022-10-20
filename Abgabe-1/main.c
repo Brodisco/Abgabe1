@@ -130,7 +130,36 @@ void Palindrom (void)
 
 //Aufgabe 7
 
-void Rechteck (void)
+void Rechteck (unsigned int Breite, unsigned int Hoehe, char c)
+{
+	// Deckel
+	for (int i = 0; i < Breite; i++)
+	{
+		printf("%c", c);
+	}
+
+	printf("\n");
+
+	for (int i = 2; i < Hoehe; i++)
+	{
+		printf("%c", c);
+		for(int j = 2; j < Breite; j++)
+		{
+			printf(" ");
+		}
+		printf("%c\n", c);
+	}
+	// Boden
+
+	for (int i = 0; i < Breite; i++)
+	{
+		printf("%c", c);
+	}
+}
+
+//Aufgabe 8
+
+void Sanduhr (void)
 {
 
 }
@@ -145,8 +174,8 @@ int main (void)
 //	Uhrzeit4();
 //	Pinnummer();
 //	Palindrom();
-	Rechteck();
-
+//	Rechteck(4, 6, 'x');
+	Sanduhr();
 	return EXIT_SUCCESS;
 }
 
