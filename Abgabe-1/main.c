@@ -10,7 +10,8 @@
 
 int main() {
 
-	/* Aufgabe 1
+	/*Aufgabe 1
+
 	printf("   (%c`-''-/%c).___..--''%c`-._  	\n",34,34,34);
 	printf("    `6_ 6 ) `-. (     ).`-.__.`)     	\n");
 	printf("    (_Y_.)' ._ ) `._ `. ``-..-'  	\n");
@@ -31,7 +32,8 @@ int main() {
 	printf("%d",Quersumme);
 	*/
 
-	/* Aufgabe 3 a
+	/*Aufgabe 3 a
+
 	int Stunden = 12;
 	int Minuten = 20;
 	int Sekunden = 43;
@@ -41,6 +43,7 @@ int main() {
 	*/
 
 	/*Aufgabe 4 a
+
 	int Sekunden = 24060;
 	int Minuten = Sekunden / 60.0;
 	int Stunden = Minuten /60.0;
@@ -53,12 +56,30 @@ int main() {
 	printf("Uhrzeit = %2.d:%2.d:%2.d ",IStunden,IMinuten,ISekunden);
 	*/
 
-
 	/*Aufgabe 4 b
 
 	int zeit = 24060;
 	printf("%2.d:%2.d:%2.d",zeit/60/60,zeit/60 - zeit/60/60*60,zeit - zeit/60*60);
 	*/
+
+	/*Aufgabe 5
+
+	int code = 0;
+
+	while(code != 999)
+	{
+
+	code ++;
+	printf("%4.d \n", code);
+
+	}
+	*/
+
+	//Aufgabe 6
+
+	int Zahl = 12321;
+
+
 
 	return 0;
 }
