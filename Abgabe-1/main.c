@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 void PrintTiger(void)
@@ -130,9 +131,18 @@ void Palindrom (void)
 
 //Aufgabe 7
 
-void Rechteck (unsigned int Breite, unsigned int Hoehe, char c)
+void Rechteck ()
 {
-	// Deckel
+	unsigned int Breite;
+	unsigned int Hoehe;
+	char c;
+	printf("Geben Sie Breite ein: ");
+	scanf("%d", &Breite);
+	printf("Geben Sie Hoehe ein: ");
+	scanf("%d", &Hoehe);
+	printf("Geben Sie ein Zeichen: ");
+	scanf(" %c", &c);
+
 	for (int i = 0; i < Breite; i++)
 	{
 		printf("%c", c);
@@ -143,13 +153,13 @@ void Rechteck (unsigned int Breite, unsigned int Hoehe, char c)
 	for (int i = 2; i < Hoehe; i++)
 	{
 		printf("%c", c);
+
 		for(int j = 2; j < Breite; j++)
 		{
 			printf(" ");
 		}
 		printf("%c\n", c);
 	}
-	// Boden
 
 	for (int i = 0; i < Breite; i++)
 	{
@@ -164,6 +174,7 @@ void Sanduhr (void)
 
 }
 
+
 int main (void)
 {
 //	PrintTiger();
@@ -174,8 +185,9 @@ int main (void)
 //	Uhrzeit4();
 //	Pinnummer();
 //	Palindrom();
-//	Rechteck(4, 6, 'x');
+//	Rechteck();
 	Sanduhr();
+
 	return EXIT_SUCCESS;
 }
 
