@@ -64,20 +64,58 @@ int main() {
 
 	/*Aufgabe 5
 
-	int code = 0;
-
-	while(code != 999)
+	for(int T = 0;T < 10;T++)
 	{
 
-	code ++;
-	printf("%4.d \n", code);
+		for(int H = 0;H < 10;H++)
+		{
+
+			for(int Z = 0;Z < 10;Z++)
+			{
+
+				for(int E = 0;E < 10;E++)
+				{
+
+					printf("%d", T);
+					printf("%d", H);
+					printf("%d", Z);
+					printf("%d\n", E);
+
+				}
+
+			}
+
+		}
 
 	}
+
 	*/
 
-	//Aufgabe 6
+	/*Aufgabe 6
 
-	int Zahl = 12321;
+	int Zahl = 44444;
+	int ZT = Zahl /10000;
+	int T = Zahl /1000 - ZT * 10;
+	int H = Zahl /100 - ZT * 100 - T * 10;
+	int Z = Zahl /10 - ZT * 1000 - T * 100 - H * 10;
+	int E = Zahl - ZT * 10000 - T * 1000 - H * 100 - Z * 10;
+
+	if(ZT == E)
+	{
+		if(T == Z)
+		{
+			printf("Palindrom");
+		}
+		else
+		{
+			printf("kein Palindrom");
+		}
+	}
+
+	printf("    ZT%d T%d H%d Z%d E%d", ZT, T, H, Z, E);
+	*/
+
+	//Aufgabe 7
 
 
 
