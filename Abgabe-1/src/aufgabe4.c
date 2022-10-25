@@ -4,7 +4,8 @@
  *  Created on: 25.10.2022
  *      Author: maximilian
  */
-
+#include <stdio.h>
+#include <stdlib.h>
 
 void aufgabe4(int count)
 {

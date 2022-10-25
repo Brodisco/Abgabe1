@@ -36,7 +36,7 @@ int main(void)
 
 	aufgabe6(11232211);
 	
-	aufgabe7(4,6,'x');
+	aufgabe7(20,10,'x');
 
 	aufgabe8(8, 'x');
 

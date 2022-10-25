@@ -4,31 +4,37 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/clock.c \
-../src/main.c \
-../src/palindrom.c \
-../src/picture.c \
-../src/rectangle.c \
-../src/squareSum.c \
-../src/verifyCode.c 
+../src/aufgabe1.c \
+../src/aufgabe2.c \
+../src/aufgabe3.c \
+../src/aufgabe4.c \
+../src/aufgabe5.c \
+../src/aufgabe6.c \
+../src/aufgabe7.c \
+../src/aufgabe8.c \
+../src/main.c 
 
 C_DEPS += \
-./src/clock.d \
-./src/main.d \
-./src/palindrom.d \
-./src/picture.d \
-./src/rectangle.d \
-./src/squareSum.d \
-./src/verifyCode.d 
+./src/aufgabe1.d \
+./src/aufgabe2.d \
+./src/aufgabe3.d \
+./src/aufgabe4.d \
+./src/aufgabe5.d \
+./src/aufgabe6.d \
+./src/aufgabe7.d \
+./src/aufgabe8.d \
+./src/main.d 
 
 OBJS += \
-./src/clock.o \
-./src/main.o \
-./src/palindrom.o \
-./src/picture.o \
-./src/rectangle.o \
-./src/squareSum.o \
-./src/verifyCode.o 
+./src/aufgabe1.o \
+./src/aufgabe2.o \
+./src/aufgabe3.o \
+./src/aufgabe4.o \
+./src/aufgabe5.o \
+./src/aufgabe6.o \
+./src/aufgabe7.o \
+./src/aufgabe8.o \
+./src/main.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -43,7 +49,7 @@ src/%.o: ../src/%.c src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/clock.d ./src/clock.o ./src/main.d ./src/main.o ./src/palindrom.d ./src/palindrom.o ./src/picture.d ./src/picture.o ./src/rectangle.d ./src/rectangle.o ./src/squareSum.d ./src/squareSum.o ./src/verifyCode.d ./src/verifyCode.o
+	-$(RM) ./src/aufgabe1.d ./src/aufgabe1.o ./src/aufgabe2.d ./src/aufgabe2.o ./src/aufgabe3.d ./src/aufgabe3.o ./src/aufgabe4.d ./src/aufgabe4.o ./src/aufgabe5.d ./src/aufgabe5.o ./src/aufgabe6.d ./src/aufgabe6.o ./src/aufgabe7.d ./src/aufgabe7.o ./src/aufgabe8.d ./src/aufgabe8.o ./src/main.d ./src/main.o
 
 .PHONY: clean-src
 

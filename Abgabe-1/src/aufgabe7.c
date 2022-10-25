@@ -4,8 +4,6 @@
  *  Created on: 14.10.2022
  *      Author: student
  */
-
-
 #include <stdio.h>
 #include <stdlib.h>
 
