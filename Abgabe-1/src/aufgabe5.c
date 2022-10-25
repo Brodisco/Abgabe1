@@ -9,13 +9,14 @@
 #include <stdlib.h>
 #include <math.h>
 
-void printAllPossibleNumbers(int n)
+void aufgabe5(int n)
 {
 	int maxVal = (int) pow(10, n);
 	for (int i = 0; i < maxVal; i++)
 	{
 		printf("%04d \n", i);
 	}
+	printf("\n\n");
 }
 
 

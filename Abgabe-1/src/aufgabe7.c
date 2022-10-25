@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void rechteck(unsigned int breite, unsigned int hoehe, char c)
+void aufgabe7(unsigned int breite, unsigned int hoehe, char c)
 {
 	for (int y = 0; y <= hoehe; y++)
 	{
@@ -24,4 +24,5 @@ void rechteck(unsigned int breite, unsigned int hoehe, char c)
 		}
 		printf("\n");
 	}
+	printf("\n");
 }

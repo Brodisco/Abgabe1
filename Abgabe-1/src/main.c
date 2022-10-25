@@ -9,37 +9,36 @@
 #include <stdlib.h>
 #include <math.h>
 
-int squareSum(int n);
-void printTime(int stunden, int minuten, int sekunden);
-void printTimeFromCount(int count);
-void printAllPossibleNumbers(int n);
-void checkPalindrom(int n);
-void rechteck(unsigned int breite, unsigned int hoehe, char c);
-void sanduhr(unsigned int b, char c);
-void drawPicture();
+void aufgabe1();
+void aufgabe2(int n);
+void aufgabe3(int stunden, int minuten, int sekunden);
+void aufgabe4(int count);
+void aufgabe5(int n);
+void aufgabe6(int n);
+void aufgabe7(unsigned int breite, unsigned int hoehe, char c);
+void aufgabe8(unsigned int b, char c);
+
 
 int main(void)
 {
-	drawPicture();
-	printf("\n");
 
-	printf("Abgabe 1: 28.10.22 \n");
+	printf("Abgabe 1: 28.10.22 \n\n");
+
+	aufgabe1();
 	
-	printf("QS: %d \n", squareSum(123456789));
+	aufgabe2(123456789);
 
-	printTime(12, 9, 43);
+	aufgabe3(12, 9, 43);
 
-	printTimeFromCount(24060);
+	aufgabe4(24060);
 
-	//printAllPossibleNumbers(4);
+	//aufgabe5(4);
 
-	checkPalindrom(112232211);
+	aufgabe6(11232211);
 	
-	rechteck(4,6,'x');
+	aufgabe7(4,6,'x');
 
-	printf("\n");
-
-	sanduhr(10, 'x');
+	aufgabe8(8, 'x');
 
 
 

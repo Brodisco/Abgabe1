@@ -9,8 +9,9 @@
 #include <math.h>
 
 
-void checkPalindrom(int n)
+void aufgabe6(int n)
 {
+	int input = n;
 	int posNum[20];
 	int counter = 0;
 	int palFlag = 1;
@@ -30,7 +31,7 @@ void checkPalindrom(int n)
 	{
 		if (!(posNum[l] == posNum[r]))
 		{
-			printf("kein Palindrom \n");
+			printf("%d ist kein Palindrom \n\n", input);
 			palFlag = 0;
 
 		}
@@ -38,10 +39,8 @@ void checkPalindrom(int n)
 
 	if (palFlag)
 	{
-		printf("Palindrom \n");
+		printf("%d ist ein Palindrom \n\n", input);
 	}
-
-
 
 }
 

@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <math.h>
 /*
-int squareSum(int n)
+void aufgabe2(int n)
 {
 	int squareSum = 0;
 	const int maxLen = 20;
@@ -30,13 +30,14 @@ int squareSum(int n)
 
 	squareSum += n;
 
-	return squareSum;
+	printf("Quersumme: %d \n", squareSum);
 }
 */
 
-int squareSum(int n)
+void aufgabe2(int n)
 {
 	int squareSum = 0;
+	int input = n;
 
 	while(n > 0)
 	{
@@ -44,6 +45,6 @@ int squareSum(int n)
 		n /= 10;
 	}
 
-	return squareSum;
+	printf("Quersumme: %d -> %d \n\n", input, squareSum);
 }
 
