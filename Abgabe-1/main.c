@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 void aufgabe1()
 {
  	printf("Aufgabe 1 \n");
@@ -105,7 +106,97 @@ void aufgabe6(int input)
 }
 
 
+void aufgabe7(unsigned int breite, unsigned int hoehe, char c)
+{
+	printf("Aufgabe 7\n");
+
+	for (int y = 0; y <= hoehe; y++)
+	{
+		for (int x = 0; x <= breite; x++)
+		{
+			if ((x == 0) || (x == breite) || (y == 0) || (y == hoehe))
+			{
+				printf("%c", c);
+			}else{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+	printf("\n");
+}
+
+
+void aufgabe8(unsigned int b, char c)
+{
+	printf("Aufgabe 8\n");
+
+	for(int y = 0; y < b; y++)
+	{
+		for(int x = 0; x < b; x++)
+		{
+			//print the X of the Sandclock
+			if ( ((y + x) == (b - 1)) || ((y == x) ) )
+			{
+				printf("%c", c);
+			}else{
+				//Decide if the clock is filled from the top or from the bottom up
+				if ( (b % 2) == 0)
+				{
+					//Fill the top part of the clock
+					if ( ((y + x) < b) && !((y - x) >= 0) )
+					{
+						printf("%c", c);
+					}else{
+						//Build the base plate
+						if (y == (b - 1))
+						{
+							printf("%c", c);
+						}else{
+							printf(" ");
+						}
+					}
+				}else{
+					//Fill the bottom part of the clock
+					if ( !((y + x) < b) && ((y - x) >= 0) )
+					{
+						printf("%c", c);
+					}else{
+						//Build the top plate
+						if (y == 0)
+						{
+							printf("%c", c);
+						}else{
+							printf(" ");
+						}
+					}
+				}
+			}
+		}
+		printf("\n");
+	}
+}
+
+
+int main(void)
+{
+	aufgabe1();
+
+	aufgabe2(1234);
+
+	aufgabe3(12, 4, 43);
+
+	aufgabe4(24060);
+
+	//aufgabe5();
+
+	aufgabe6(12321);
+
+	aufgabe7(10,5,'x');
+
+	aufgabe8(10,'X');
 
 
 	return EXIT_SUCCESS;
 }
+
