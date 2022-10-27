@@ -110,11 +110,11 @@ void aufgabe7(unsigned int breite, unsigned int hoehe, char c)
 {
 	printf("Aufgabe 7\n");
 
-	for (int y = 0; y <= hoehe; y++)
+	for (int y = 0; y < hoehe; y++)
 	{
-		for (int x = 0; x <= breite; x++)
+		for (int x = 0; x < breite; x++)
 		{
-			if ((x == 0) || (x == breite) || (y == 0) || (y == hoehe))
+			if ((x == 0) || (x == (breite - 1)) || (y == 0) || (y == (hoehe - 1)))
 			{
 				printf("%c", c);
 			}else{
@@ -188,7 +188,7 @@ int main(void)
 
 	aufgabe4(24060);
 
-	//aufgabe5();
+	aufgabe5();
 
 	aufgabe6(12321);
 
